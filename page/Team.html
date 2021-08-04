@@ -8,8 +8,21 @@
 </head>
 
 <body>
+    <script>
+        $(document).ready(function() {
+            $('img').hide();
+            $('img').each(function(i) {
+                if (this.complete) {
+                    $(this).fadeIn(2000);
+                } else {
+                    $(this).load(function() {
+                        $(this).fadeIn(2000);
+                    });
+                }
+            });
+        });
+    </script>
     <main>
-
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -58,6 +71,7 @@
       </button>
         </div>
 
+        <h2 style="text-align: center">Team members</h2>
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -66,10 +80,10 @@
                             <div class="wrapper">
                                 <img src="../image/kevin.jpg" alt="thumbnail">
                                 <div class="title">
-                                    Kévin DANG
+                                    Kevin DANG
                                 </div>
                                 <div class="place">
-                                    Paris, France
+                                    Wiki design
                                 </div>
                             </div>
                             <div class="content">
@@ -84,10 +98,10 @@
                             <div class="wrapper">
                                 <img src="../image/kevin.jpg" alt="thumbnail">
                                 <div class="title">
-                                    Kévin DANG
+                                    Kevin DANG
                                 </div>
                                 <div class="place">
-                                    Paris, France
+                                    Wiki design
                                 </div>
                             </div>
                             <div class="content">
@@ -102,10 +116,10 @@
                             <div class="wrapper">
                                 <img src="../image/kevin.jpg" alt="thumbnail">
                                 <div class="title">
-                                    Kévin DANG
+                                    Kevin DANG
                                 </div>
                                 <div class="place">
-                                    Paris, France
+                                    Wiki design
                                 </div>
                             </div>
                             <div class="content">
@@ -120,10 +134,10 @@
                             <div class="wrapper">
                                 <img src="../image/kevin.jpg" alt="thumbnail">
                                 <div class="title">
-                                    Kévin DANG
+                                    Kevin DANG
                                 </div>
                                 <div class="place">
-                                    Paris, France
+                                    Wiki design
                                 </div>
                             </div>
                             <div class="content">
@@ -138,10 +152,10 @@
                             <div class="wrapper">
                                 <img src="../image/kevin.jpg" alt="thumbnail">
                                 <div class="title">
-                                    Kévin DANG
+                                    Kevin DANG
                                 </div>
                                 <div class="place">
-                                    Paris, France
+                                    Wiki design
                                 </div>
                             </div>
                             <div class="content">
@@ -156,10 +170,10 @@
                             <div class="wrapper">
                                 <img src="../image/kevin.jpg" alt="thumbnail">
                                 <div class="title">
-                                    Kévin DANG
+                                    Kevin DANG
                                 </div>
                                 <div class="place">
-                                    Paris, France
+                                    Wiki design
                                 </div>
                             </div>
                             <div class="content">
@@ -174,10 +188,10 @@
                             <div class="wrapper">
                                 <img src="../image/kevin.jpg" alt="thumbnail">
                                 <div class="title">
-                                    Kévin DANG
+                                    Kevin DANG
                                 </div>
                                 <div class="place">
-                                    Paris, France
+                                    Wiki design
                                 </div>
                             </div>
                             <div class="content">
@@ -192,10 +206,10 @@
                             <div class="wrapper">
                                 <img src="../image/kevin.jpg" alt="thumbnail">
                                 <div class="title">
-                                    Kévin DANG
+                                    Kevin DANG
                                 </div>
                                 <div class="place">
-                                    Paris, France
+                                    Wiki design
                                 </div>
                             </div>
                             <div class="content">
@@ -210,10 +224,71 @@
                             <div class="wrapper">
                                 <img src="../image/kevin.jpg" alt="thumbnail">
                                 <div class="title">
-                                    Kévin DANG
+                                    Kevin DANG
                                 </div>
                                 <div class="place">
-                                    Paris, France
+                                    Wiki design
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Yeah i know i'm kinda cute
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 style="text-align: center;">Supervisors</h2>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="profile">
+                            <div class="wrapper">
+                                <img src="../image/kevin.jpg" alt="thumbnail">
+                                <div class="title">
+                                    Kevin DANG
+                                </div>
+                                <div class="place">
+                                    Wiki design
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Yeah i know i'm kinda cute
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="profile">
+                            <div class="wrapper">
+                                <img src="../image/kevin.jpg" alt="thumbnail">
+                                <div class="title">
+                                    Kevin DANG
+                                </div>
+                                <div class="place">
+                                    Wiki design
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Yeah i know i'm kinda cute
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="profile">
+                            <div class="wrapper">
+                                <img src="../image/kevin.jpg" alt="thumbnail">
+                                <div class="title">
+                                    Kevin DANG
+                                </div>
+                                <div class="place">
+                                    Wiki design
                                 </div>
                             </div>
                             <div class="content">
