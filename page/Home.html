@@ -13,10 +13,10 @@
             $('img').hide();
             $('img').each(function(i) {
                 if (this.complete) {
-                    $(this).fadeIn(3000);
+                    $(this).fadeIn(2000);
                 } else {
                     $(this).load(function() {
-                        $(this).fadeIn(3000);
+                        $(this).fadeIn(2000);
                     });
                 }
             });
@@ -158,6 +158,11 @@
 
         </div>
         <!-- /.container -->
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+        </footer>
 </body>
 
 </html>
