@@ -112,6 +112,14 @@
        background: linear-gradient(-45deg, #8a1538, #019fab);
    }
    
+   .profile .wrapper .carousel {
+       position: relative;
+       left: 50%;
+       transform: translateX(-50%);
+       width: 200px;
+       height: 200px;
+   }
+   
    .profile:hover {
        height: 470px;
        width: 350px;
@@ -171,4 +179,9 @@
    
    #rotatingLogo {
        animation: 10s rotate360 infinite linear;
+   }
+   
+   .toplogo {
+       height: 5%;
+       width: 5%;
    }
