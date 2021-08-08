@@ -4,7 +4,7 @@
    
    body {
        padding-bottom: 3rem;
-       color: #5a5a5a;
+       color: #8a1538;
    }
    /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
@@ -29,8 +29,8 @@
        position: absolute;
        top: 0;
        left: 0;
-       min-width: 100%;
        height: 32rem;
+       min-width: 100%;
    }
    /* MARKETING CONTENT
   -------------------------------------------------- */
@@ -56,6 +56,7 @@
    
    .featurette-divider {
        margin: 5rem 0;
+       background-color: #8a1538;
        /* Space out the Bootstrap <hr> more */
    }
    /* Thin out the marketing headings */
@@ -178,10 +179,43 @@
    }
    
    #rotatingLogo {
-       animation: 10s rotate360 infinite linear;
+       animation: 60s rotate360 infinite linear;
    }
    
    .toplogo {
        height: 5%;
        width: 5%;
+   }
+   
+   @keyframes heartFadeInOut {
+       0% {
+           transform: scale(1);
+       }
+       25% {
+           transform: scale(.97);
+       }
+       35% {
+           transform: scale(.9);
+       }
+       45% {
+           transform: scale(1.1);
+       }
+       55% {
+           transform: scale(.9);
+       }
+       65% {
+           transform: scale(1.1);
+       }
+       75% {
+           transform: scale(1.03);
+       }
+       100% {
+           transform: scale(1);
+       }
+   }
+   
+   #beatingLogo {
+       animation-name: heartFadeInOut;
+       animation-iteration-count: infinite;
+       animation-duration: 2s;
    }
