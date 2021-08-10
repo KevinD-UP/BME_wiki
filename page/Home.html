@@ -4,34 +4,30 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js" integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="../style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <script>
-        $(document).ready(function() {
-            $('img').hide();
-            $('img').each(function(i) {
-                if (this.complete) {
-                    $(this).fadeIn(2000);
-                } else {
-                    $(this).load(function() {
-                        $(this).fadeIn(2000);
-                    });
-                }
-            });
-        });
-    </script>
     <main>
-
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel overlay -->
+        <div class="overlay">
+            <img class="homepageLogo" src="../image/LogoIGEMUparis.png" alt="logo">
+            <br>
+            <h1 class="ml6">
+                <span class="text-wrapper">
+                  <span class="letters">Welcome to the wiki of University of Paris BME team</span>
+                </span>
+            </h1>
+        </div>
+        <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="5000">
                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
 
                     <!--<div class="container">
@@ -42,8 +38,8 @@
                         </div>
                     </div>-->
                 </div>
-                <div class="carousel-item">
-                    <img src="../image/Teampicwithoutlogo.JPG" alt="Team pic">
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img class="headliner" src="../image/Teampicwithoutlogo.JPG" alt="Team pic" style="height: 140%; top: -300;">
 
                     <!--<div class="container">
                         <div class="carousel-caption">
@@ -53,7 +49,7 @@
                         </div>
                     </div>-->
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="5000">
                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
 
                     <!--<div class="container">
@@ -65,15 +61,16 @@
                     </div>-->
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
-          </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+        </button>
+        <!-- Ending of carousel -->
 
 
         <!-- Marketing messaging and featurettes
@@ -81,12 +78,13 @@
         <!-- Wrap the rest of the page in another container to center all the content. -->
 
         <div class="container marketing">
-
             <!-- Three columns of text below the carousel -->
             <div class="row">
                 <div class="col-lg-4">
                     <img src="../image/logoWithoutText.png" alt="logo exoswitch" width="150" height="150">
-
+                    <span class="circle circle-dark"></span>
+                    <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+                    <hr>
                     <h2>The ExoSwitch</h2>
                     <p>A liquid biopsy tool for early stage cancer diagnostics</p>
                     <p><a class="btn btn-secondary" href="#">Learn more &raquo;</a></p>
@@ -94,7 +92,7 @@
                 <!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img src="../image/LogoIGEMUparis.png" alt="team logo" width="150" height="150">
-
+                    <hr>
                     <h2>University of Paris <br> BME team </h2>
                     <p>Don't doubt about the fact that we are the best team :D</p>
                     <p><a class="btn btn-secondary" href="#">Get to know us &raquo;</a></p>
@@ -102,6 +100,7 @@
                 <!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img src="../image/microscope.gif" alt="microscrope" width="150" height="150" style="border-radius: 50%;">
+                    <hr>
                     <h2>Where are we now ?</h2>
                     <p>Dry lab and wet lab work progress in parallel in order to succeed at the same time in toehold switch modeling, its functionality test, cell cultures and …
                     </p>
@@ -122,7 +121,7 @@
                     <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
                 </div>
                 <div class="col-md-5">
-                    <img id="rotatingLogo" src="../image/logoWithoutText.png" alt="logo exoswitch" style="width: 500;">
+                    <img class="rotatingLogo" src="../image/logoWithoutText.png" alt="logo exoswitch" style="width: 500;">
                 </div>
             </div>
 
@@ -134,7 +133,7 @@
                     <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <img id="beatingLogo" src="../image/LogoIGEMUparis.png" alt="logo igemUparis" style="width: 500;">
+                    <img class="beatingLogo" src="../image/LogoIGEMUparis.png" alt="logo igemUparis" style="width: 500;">
                 </div>
             </div>
 
@@ -152,15 +151,38 @@
                 <hr class="featurette-divider">
 
                 <!-- /END THE FEATURETTES -->
-
             </div>
             <!-- /.container -->
+        </div>
     </main>
 
     <!-- FOOTER -->
     <footer class="container">
         <p class="float-end"><a href="#">Back to top</a></p>
     </footer>
+    <script>
+        var textWrapper = document.querySelector('.ml6');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({
+                loop: true
+            })
+            .add({
+                targets: '.ml6 .letter',
+                scale: [4, 1],
+                opacity: [0, 1],
+                translateZ: 0,
+                easing: "easeOutExpo",
+                duration: 950,
+                delay: (el, i) => 70 * i
+            }).add({
+                targets: '.ml6',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
 </body>
 
 </html>

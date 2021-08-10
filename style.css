@@ -5,6 +5,7 @@
    body {
        padding-bottom: 3rem;
        color: #8a1538;
+       font-family: 'Courier New', Courier, monospace
    }
    /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
@@ -19,18 +20,36 @@
        bottom: 3rem;
        z-index: 10;
    }
+   
+   .overlay {
+       color: #8a1538;
+       position: absolute;
+       z-index: 12;
+       left: 50%;
+       transform: translateX(-50%);
+       width: 80%;
+       height: 100%;
+       margin-top: 4rem;
+       text-align: center;
+       text-shadow: 2px 2px 5px black;
+   }
    /* Declare heights because of positioning of img element */
    
    .carousel-item {
-       height: 32rem;
+       height: 57.8rem;
    }
    
    .carousel-item>img {
        position: absolute;
        top: 0;
-       left: 0;
-       height: 32rem;
-       min-width: 100%;
+       transform: translateX(-50%);
+       height: 57.8rem;
+       left: 50%;
+       width: 100%;
+   }
+   
+   .homepageLogo {
+       width: 40%;
    }
    /* MARKETING CONTENT
   -------------------------------------------------- */
@@ -101,6 +120,8 @@
            font-size: 3.5rem;
        }
    }
+   /* PROFILE FOR TEAM MEMBERS
+  -------------------------------------------------- */
    
    .profile {
        height: 250px;
@@ -172,20 +193,100 @@
        padding: 1px 20px 10px 20px!important;
    }
    
+   .content .quotation {
+       font-size: small;
+       text-align: center;
+   }
+   
+   .content .description {
+       font-size: small;
+   }
+   /* NAVBAR SECTION
+    -------------------------------------------------- */
+   
+   .navbar {
+       font-size: 1.1rem;
+       transition: 1s;
+       position: absolute;
+       margin: 10px;
+       width: 90%;
+       left: 50%;
+       transform: translateX(-50%);
+   }
+   
+   .nav.navbar-nav.navbar-right li a {
+       color: #fff;
+   }
+   
+   .dropdown-menu {
+       background-color: #8a1538;
+       transition: 1s;
+   }
+   
+   .dropdown-item {
+       color: #fff;
+   }
+   /* ANIMATION SECTION
+   -------------------------------------------------- */
+   /*--- rotation begin ---*/
+   
    @keyframes rotate360 {
        to {
            transform: rotate(360deg);
        }
    }
    
-   #rotatingLogo {
+   .rotatingLogo {
        animation: 60s rotate360 infinite linear;
    }
    
-   .toplogo {
-       height: 5%;
-       width: 5%;
+   @media (min-width: 768px) {
+       .animate {
+           animation-duration: 0.3s;
+           -webkit-animation-duration: 0.3s;
+           animation-fill-mode: both;
+           -webkit-animation-fill-mode: both;
+       }
    }
+   /*--- rotation end ---*/
+   /*--- slideIn begin ---*/
+   
+   @keyframes slideIn {
+       0% {
+           transform: translateY(1rem);
+           opacity: 0;
+       }
+       100% {
+           transform: translateY(0rem);
+           opacity: 1;
+       }
+       0% {
+           transform: translateY(1rem);
+           opacity: 0;
+       }
+   }
+   
+   @-webkit-keyframes slideIn {
+       0% {
+           -webkit-transform: transform;
+           -webkit-opacity: 0;
+       }
+       100% {
+           -webkit-transform: translateY(0);
+           -webkit-opacity: 1;
+       }
+       0% {
+           -webkit-transform: translateY(1rem);
+           -webkit-opacity: 0;
+       }
+   }
+   
+   .slideIn {
+       -webkit-animation-name: slideIn;
+       animation-name: slideIn;
+   }
+   /*--- slideIn end ---*/
+   /*--- Heartbeat begin ---*/
    
    @keyframes heartFadeInOut {
        0% {
@@ -214,8 +315,93 @@
        }
    }
    
-   #beatingLogo {
+   .beatingLogo {
        animation-name: heartFadeInOut;
        animation-iteration-count: infinite;
        animation-duration: 2s;
    }
+   /*--- Heartbeat end ---*/
+   /*--- Typing smooth begin ---*/
+   
+   .typingSmooth {
+       border-right: solid 3px #fff;
+       white-space: nowrap;
+       overflow: hidden;
+       display: inline-block;
+   }
+   /* Animation */
+   
+   .typingSmooth {
+       animation: animated-text 4s linear 1s 1 normal both, animated-cursor 600ms linear infinite;
+   }
+   /* text animation */
+   
+   @keyframes animated-text {
+       from {
+           width: 0;
+       }
+       to {
+           width: 82%;
+       }
+   }
+   /* cursor animations */
+   
+   @keyframes animated-cursor {
+       from {
+           border-right-color: #fff;
+       }
+       to {
+           border-right-color: transparent;
+       }
+   }
+   /*--- Typing smooth end ---*/
+   /*--- Typing click begin ---*/
+   
+   .typingClick {
+       /*border-right: solid 3px #fff;*/
+       white-space: nowrap;
+       overflow: hidden;
+       display: inline-block;
+   }
+   /* Animation */
+   
+   .typingClick {
+       animation: animated-text-click 4s steps(29, end) 1s 1 normal both, animated-cursor-click 600ms steps(29, end) infinite;
+   }
+   /* text animation */
+   
+   @keyframes animated-text-click {
+       from {
+           width: 0;
+       }
+       to {
+           width: 100%;
+       }
+   }
+   /* cursor animations */
+   
+   @keyframes animated-cursor-click {
+       from {
+           border-right-color: #fff;
+       }
+       to {
+           border-right-color: transparent;
+       }
+   }
+   /*--- Typing click begin ---*/
+   /*--- Main title overlay begin ---*/
+   
+   .ml6 {
+       position: relative;
+   }
+   
+   .ml6 .text-wrapper {
+       position: relative;
+       display: inline-block;
+       overflow: hidden;
+   }
+   
+   .ml6 .letter {
+       display: inline-block;
+   }
+   /*--- Main title overlay end ---*/
