@@ -11,13 +11,13 @@
     <link href="../style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body style="background-color: brown;">
-    <footer class="text-center text-white" style="background-color: #4e1526;">
+<body>
+    <footer class="text-center text-white" style="background-color: #8a1538;">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
             <h2 class="ml14">
                 <span class="text-wrapper">
-              <span class="letters">Join us !</span>
+                    <span class="letters">Join us !</span>
                 <span class="line"></span>
                 </span>
             </h2>
@@ -55,73 +55,20 @@
         <hr>
 
         <h2 class="ml15">
-            <span class="word">A</span>
-            <span class="word">special</span>
-            <span class="word">thanks</span>
-            <span class="word">to</span>
+            A Special Thanks To
         </h2>
 
         <p>PUT HERE LOGO OF EVERY PARTNER</p>
 
         <!-- Copyright -->
-        <div class="text-center p-2" style="background-color: #8a1538; font-size: 12">
-            ©2021 Copyright: iGEM UParis <br> Source code released under MIT License <br> Made using Bootstrap, jQuery and animejs
+        <div class="text-center p-2" style="background-color: #4e1526; font-size: 12">
+            ©2021 Copyright: iGEM UParis, author: Kévin DANG <br> Source code released under MIT License <br> Made using Bootstrap, jQuery and animejs
         </div>
         <!-- Copyright -->
-        </button>
 
     </footer>
 
-    <script>
-        // Wrap every letter in a span
-        var textWrapper = document.querySelector('.ml14 .letters');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-        anime.timeline({
-                loop: true
-            })
-            .add({
-                targets: '.ml14 .line',
-                scaleX: [0, 1],
-                opacity: [0.5, 1],
-                easing: "easeInOutExpo",
-                duration: 900
-            }).add({
-                targets: '.ml14 .letter',
-                opacity: [0, 1],
-                translateX: [40, 0],
-                translateZ: 0,
-                scaleX: [0.3, 1],
-                easing: "easeOutExpo",
-                duration: 800,
-                offset: '-=600',
-                delay: (el, i) => 150 + 25 * i
-            }).add({
-                targets: '.ml14',
-                opacity: 0,
-                duration: 1000,
-                easing: "easeOutExpo",
-                delay: 2500
-            });
-
-        anime.timeline({
-                loop: true
-            })
-            .add({
-                targets: '.ml15 .word',
-                scale: [14, 1],
-                opacity: [0, 1],
-                easing: "easeOutCirc",
-                duration: 800,
-                delay: (el, i) => 800 * i
-            }).add({
-                targets: '.ml15',
-                opacity: 0,
-                duration: 1000,
-                easing: "easeOutExpo",
-                delay: 3000
-            });
-    </script>
+    <script src="../script/script.js"></script>
 
 </body>
 
