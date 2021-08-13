@@ -1,0 +1,349 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js" integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="../style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-floating btn-lg hover-shadow ripple" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <header class="sticky-top">
+        <nav class="navbar navbar-default navbar-expand-lg navbar-dark shadow rounded" id="navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <a class="navbar-brand" href="#" style="height: 2%; width: 2%">
+                    <img src="../image/LogoIGEMUparis.png" alt="logo igem" style="width: 100%; height: 100%">
+                </a>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="https://2021.igem.org/Team:UParis_BME">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Project
+                </a>
+                            <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Background</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Description">Description</a></li>
+                                <li><a class="dropdown-item" href="#">Parts overview</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Proof_Of_Concept">Proof of concept</a></li>
+                                <li><a class="dropdown-item" href="#">Communication</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Lab
+                </a>
+                            <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Dry lab</a></li>
+                                <li><a class="dropdown-item" href="#">Wet lab</a></li>
+                                <li><a class="dropdown-item" href="#">Safety</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://2021.igem.org/Team:UParis_BME/Human_Practices">Human pratices</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                            <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Team">Team</a></li>
+                                <li><a class="dropdown-item" href="#">Partnerships</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Collaborations">Collaborations</a></li>
+                                <li><a class="dropdown-item" href="#">Sponsors</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Awards
+                </a>
+                            <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Education">Education</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Entrepreneurship">Entrepreneurship</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Hardware">Hardware</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Inclusivity">Inclusivity</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Measurement">Measurement</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Model">Model</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Plant">Plant</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Software">Software</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Substainable">Substainable</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="headliner">
+            <img class="pageIllustration" src="../image/adn.jpg" alt="page illustration">
+            <h1 class="pageTitle ml6">
+                <span class="text-wrapper">
+                      <span class="letters">Animated Big Title</span>
+                </span>
+            </h1>
+        </div>
+        <div id="stick-here"></div>
+        <div id="stickThis" class="sidebar-container">
+            <div class="sidebar-logo">
+                <a href="#" style="text-decoration: none; color: #8a1538;"><u><b>Page Title</b></u></a>
+            </div>
+            <ul class="sidebar-navigation">
+                <li>
+                    <a href="#paragraphe1">
+                        <div class="scanfcode">
+                            <i class="fas fa-chevron-right" aria-hidden="true"></i> Title 1 more longer for test
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#paragraphe2">
+                        <div class="scanfcode">
+                            <i class="fas fa-chevron-right" aria-hidden="true"></i> Title 2
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#paragraphe3">
+                        <div class="scanfcode">
+                            <i class="fas fa-chevron-right" aria-hidden="true"></i> Title 3
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#paragraphe4">
+                        <div class="scanfcode">
+                            <i class="fas fa-chevron-right" aria-hidden="true"></i> Title 4
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#paragraphe5">
+                        <div class="scanfcode">
+                            <i class="fas fa-chevron-right" aria-hidden="true"></i> Title 5
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-container">
+            <div class="container">
+                <div class="articleContent">
+                    <a class="anchor" id="paragraphe1"></a>
+                    <div class="paragraphe">
+                        <h2>
+                            <b>Title 1</b>
+                        </h2>
+                        <p class="textContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere malesuada augue at luctus. Vestibulum nunc odio, volutpat vitae blandit in, pellentesque vitae sem. Duis tincidunt ac enim vitae commodo. Nullam eu pretium augue,
+                            a tincidunt libero. Cras dictum fringilla sapien id maximus. Suspendisse nisl turpis, mollis sed lobortis euismod, ultricies ac magna. Sed lectus erat, pretium a hendrerit vel, efficitur non magna. Nullam maximus nibh eu enim
+                            convallis, eget pharetra arcu commodo. Etiam ornare nibh nulla, in aliquam sem vestibulum eu. Donec imperdiet felis sed libero tempus varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                            egestas. Cras vitae nunc mollis, sagittis nisl non, pellentesque ex. Sed dapibus tincidunt turpis eget euismod. Pellentesque placerat in tortor ac ullamcorper. Curabitur rhoncus sem dolor, ac semper augue pulvinar eget. Nunc
+                            ultrices tortor ac leo ornare, vel consectetur enim eleifend. Quisque sapien felis, vestibulum quis faucibus ut, congue id mi. Aliquam bibendum consectetur eros quis aliquam. Nullam luctus ligula ac interdum placerat. Nullam
+                            rutrum eros eget nunc egestas interdum. Maecenas tincidunt quam a massa vehicula, vel maximus mi luctus. In porta urna non interdum vestibulum. Phasellus felis justo, vestibulum in gravida ac, bibendum sed ligula. Ut tincidunt
+                            metus at metus varius fringilla. Phasellus non lobortis est. Morbi eu turpis augue. Mauris non vestibulum ex. Ut in vulputate erat. Nunc ullamcorper magna luctus lorem malesuada, at venenatis lorem pellentesque. Mauris neque
+                            est, pellentesque a vehicula at, vestibulum ut elit. Curabitur ante sapien, gravida sit amet gravida a, porta eu quam. Sed scelerisque diam consequat neque malesuada faucibus. Ut faucibus felis sit amet eleifend sagittis. Phasellus
+                            pharetra pharetra mauris at porta. Suspendisse potenti. Nulla vel consectetur neque. Sed porttitor sit amet enim vitae condimentum. Mauris condimentum sapien neque, eget ultricies dolor ornare in. Mauris fermentum sem libero,
+                            non pretium neque condimentum vitae. Nullam tempus hendrerit libero, at aliquam arcu pellentesque sit amet. Sed lobortis nunc at sapien efficitur rutrum. Praesent rutrum libero a massa auctor euismod quis et metus. Aenean cursus
+                            varius nulla. Sed placerat lorem sed velit posuere ultricies. Aenean malesuada eros sapien, nec sagittis justo finibus at. Quisque a tempor lorem, non auctor ex.</p>
+                        <h3>Subtitle 1</h3>
+                        <p class="textContent">Donec eget ligula velit. Donec imperdiet velit vel malesuada lacinia. Suspendisse lobortis dapibus sapien, volutpat accumsan orci lobortis vitae. Sed quis urna diam. Maecenas lobortis dolor eget turpis varius condimentum. In sodales
+                            tempor velit id tincidunt. Cras eu molestie elit. Duis ac pellentesque lectus. Phasellus ornare risus in elementum ornare. Phasellus at luctus ex. Aliquam luctus lacus turpis, quis pulvinar lectus placerat vel. Sed et leo dui.
+                            Nullam malesuada et ante in pharetra.</p>
+                        <h3>Subtitle 2</h3>
+                        <ul>
+                            <li>
+                                <p>Aenean lectus risus, cursus in nisl quis, ultrices vestibulum enim.</p>
+                            </li>
+                            <li>
+                                <p>Quisque nec elit aliquam, commodo enim ac, imperdiet nulla.</p>
+                            </li>
+                            <li>
+                                <p>Praesent ut tortor at sem pellentesque ultricies.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr class="featurette-divider">
+
+                    <a class="anchor" id="paragraphe2"></a>
+                    <div class="paragraphe">
+                        <h2>
+                            <b>Title 2</b>
+                        </h2>
+                        <p class="textContent">Sed volutpat diam eget diam dictum, ut varius risus consectetur. Praesent vulputate vulputate eros, gravida fermentum ipsum placerat id. Aenean cursus varius ipsum, et viverra ante fermentum vitae. Mauris rhoncus sapien id suscipit
+                            cursus. In tellus ligula, vulputate ac ultricies eget, porttitor a nisl. Nunc lobortis tincidunt lobortis. Vestibulum pretium, eros in egestas venenatis, tortor leo porttitor eros, eget ultricies sem eros nec libero. Donec
+                            in quam ac odio convallis lacinia. In semper lectus et magna eleifend iaculis eget in risus. Proin ut nibh faucibus, ornare justo sed, euismod nibh. Suspendisse at purus rhoncus, cursus enim vel, eleifend libero. Ut non consequat
+                            dolor. Pellentesque eleifend sem et ex molestie, eget condimentum mi mattis. Duis turpis massa, consectetur finibus ipsum ac, ullamcorper tincidunt arcu. Suspendisse tincidunt hendrerit enim, non posuere arcu tincidunt quis.
+                            Suspendisse suscipit egestas rutrum. Nulla non tincidunt ex. Maecenas sit amet neque mi. Fusce eget eros quam. Aliquam ex magna, ullamcorper id odio sit amet, elementum sollicitudin erat. Aenean ex libero, varius vel venenatis
+                            at, volutpat ut urna. Pellentesque purus nulla, sodales id tellus ut, faucibus suscipit sem. Quisque ac aliquam purus. Nunc porta metus non lorem aliquet elementum. Maecenas id felis faucibus, vestibulum justo eu, luctus turpis.
+                            Sed mollis sed nisl et lobortis. Mauris nec dignissim nunc, in aliquam elit. Morbi non ullamcorper magna. Duis condimentum velit eget pellentesque commodo. Suspendisse placerat aliquam faucibus. In et dolor ante. Nulla facilisi.
+                            Ut velit arcu, auctor quis fringilla at, pretium ut diam. Nulla non feugiat mauris, quis tincidunt erat. Praesent dapibus sollicitudin luctus. Aliquam erat volutpat. Quisque ut risus vitae sem aliquet fringilla. Pellentesque
+                            suscipit malesuada tortor, non volutpat arcu vehicula in. Morbi elementum vehicula metus vel consectetur. Aliquam iaculis condimentum pulvinar. Curabitur ac posuere ipsum, nec egestas est. Ut suscipit tellus sit amet volutpat
+                            sollicitudin. Fusce a sapien mi. Aliquam suscipit venenatis turpis. Nam quis hendrerit dolor, eu congue justo. Mauris sapien justo, aliquam vestibulum pretium sed, hendrerit a libero. Fusce aliquet, turpis efficitur fringilla
+                            accumsan, quam ex sollicitudin urna, quis elementum odio magna a enim. Nam accumsan hendrerit quam, eu efficitur nibh lacinia nec. Integer quam mi, placerat nec efficitur quis, ornare placerat nisl. Phasellus cursus, purus
+                            vitae sagittis placerat, augue urna mollis sem, eget rutrum neque risus sit amet leo. Etiam ultricies porta faucibus.</p>
+                    </div>
+
+                    <hr class="featurette-divider">
+
+                    <a class="anchor" id="paragraphe3"></a>
+                    <div class="paragraphe">
+                        <h2>
+                            <b>Title 3</b>
+                        </h2>
+                        <p class="textContent">Etiam sed mi interdum magna lacinia lacinia. Nullam quam turpis, bibendum dignissim varius at, laoreet vel sem. Nulla facilisi. Ut cursus ultrices felis, vel molestie lorem maximus auctor. Vestibulum consectetur tincidunt nunc,
+                            nec condimentum tortor ornare vel. Quisque tincidunt velit magna, vel viverra augue consequat nec. Mauris tempus lectus id nisl convallis, at placerat libero fringilla. Donec imperdiet odio id dui viverra posuere. Vestibulum
+                            commodo pulvinar viverra. Donec tincidunt nec dui scelerisque aliquet. Etiam convallis pharetra eros et consectetur. Phasellus et est eget mauris accumsan tristique. Proin rhoncus quam nec augue dapibus fringilla. Phasellus
+                            placerat lacus lobortis elit ornare, eu sollicitudin nulla dignissim. In risus urna, varius nec justo id, hendrerit facilisis arcu. Vestibulum a sem in risus hendrerit dapibus. Aenean vehicula vehicula pulvinar. Aliquam hendrerit,
+                            est sit amet dictum suscipit, lectus eros commodo libero, sit amet condimentum lacus tellus quis neque. Nullam efficitur eros at ligula pharetra interdum. In tincidunt ex vel massa aliquet consectetur. Duis venenatis, ligula
+                            sit amet aliquam efficitur, nunc nisi porta risus, id posuere mi est ut tortor. Praesent accumsan, lorem vitae efficitur viverra, mi purus congue sem, vitae hendrerit diam quam at dolor. Mauris in pulvinar tortor, convallis
+                            rutrum ligula. Nulla nec sapien ac mi faucibus laoreet a eu nulla. Ut nec varius sapien. Ut tortor felis, feugiat ut dolor ac, pretium ullamcorper leo. Aliquam euismod leo turpis, at aliquam quam pellentesque vitae. Suspendisse
+                            potenti. Vestibulum elementum convallis sem, sit amet aliquet felis gravida ac. Pellentesque vel maximus nulla. Proin vitae lorem sit amet nisl consectetur commodo. Nulla tincidunt nisi in nisl ultricies dignissim non sit amet
+                            orci. Sed vehicula mauris a erat venenatis cursus. Ut arcu augue, fringilla a felis ac, lacinia ultrices felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus quis facilisis
+                            urna. Proin tincidunt gravida risus a egestas. Suspendisse efficitur malesuada justo placerat malesuada. Suspendisse ut dui dolor. Aliquam libero tellus, molestie varius odio eget, elementum dapibus metus. Vestibulum et ligula
+                            in risus posuere congue pretium sed leo. Nunc sagittis lorem quis dui aliquet, vitae vehicula nunc fringilla. Aliquam quis turpis eu lacus dapibus luctus vel non nisi. Curabitur cursus, purus vitae gravida malesuada, metus
+                            eros varius lectus, in rutrum libero ex eu felis. Donec at luctus massa, eget lacinia elit. Pellentesque pulvinar et magna cursus ultrices. Sed lacinia molestie metus, a pretium odio iaculis a. Nulla ac ligula lorem. Vestibulum
+                            ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris in venenatis mi. Integer ornare, ex eget vulputate pulvinar, eros turpis lobortis libero, a ullamcorper nisi mi id elit. Morbi pellentesque
+                            purus bibendum ultricies pretium.</p>
+                    </div>
+
+                    <hr class="featurette-divider">
+
+                    <a class="anchor" id="paragraphe4"></a>
+                    <div class="paragraphe">
+                        <h2>
+                            <b>Title 4</b>
+                        </h2>
+                        <p class="textContent">Sed accumsan ipsum sit amet orci rhoncus, sit amet mattis neque eleifend. Suspendisse purus ligula, facilisis non efficitur id, dapibus in turpis. Nam eros orci, laoreet quis eros et, dignissim tincidunt quam. Nam convallis dapibus
+                            justo, a lobortis diam. Phasellus ornare odio felis, vitae posuere augue maximus at. Suspendisse eleifend arcu id libero vehicula scelerisque. In rhoncus justo sed neque placerat egestas. Curabitur et ante ultricies, rutrum
+                            velit sed, iaculis turpis. Maecenas sagittis, lectus finibus convallis ultrices, tellus dui posuere turpis, vel sodales lectus sapien sed massa. Nullam in tortor velit. Proin vitae massa porttitor nisi egestas condimentum at
+                            non nisi. Curabitur id urna sed purus convallis gravida in fringilla nisi. Suspendisse ligula elit, fringilla vitae tincidunt ac, pellentesque nec neque. Cras convallis justo fringilla feugiat hendrerit. Nulla facilisis risus
+                            nec orci interdum, sit amet aliquam nisl varius. Nulla eu rhoncus nisl. Mauris nec nisl libero. Ut ornare mi elit, eget porttitor nisi malesuada eu. Aenean sapien libero, rhoncus id egestas sed, hendrerit tincidunt est. Nullam
+                            id dolor turpis. Donec scelerisque, felis sollicitudin vehicula sagittis, dolor ligula ullamcorper nisl, quis gravida libero dui maximus enim. Donec et accumsan eros. Pellentesque consectetur justo turpis, id ultricies est
+                            egestas in. Duis at cursus urna. Suspendisse pretium suscipit est sed auctor. Maecenas a molestie est, non placerat sem. Sed maximus scelerisque ante, sit amet pretium ex rutrum eget. Quisque euismod, dolor non volutpat accumsan,
+                            felis odio placerat ligula, sed interdum risus metus at sapien. Ut a mollis justo, et ornare neque. Mauris ullamcorper rhoncus sapien. Etiam non mi vel turpis rhoncus iaculis. Nullam placerat, metus nec varius euismod, lacus
+                            mauris posuere orci, et malesuada metus velit eu mauris. Maecenas vehicula lectus tellus, at vulputate quam ornare eget. Nam sodales luctus augue ut blandit. Integer metus urna, ullamcorper eu ullamcorper et, gravida ut mi.
+                            Aliquam libero magna, tristique a tortor vel, porttitor accumsan risus. Nulla enim turpis, fringilla vitae fermentum faucibus, ultrices nec dui. Sed eget consequat turpis. Duis aliquam non sem convallis convallis. Phasellus
+                            at tincidunt odio, non feugiat odio. Suspendisse suscipit consectetur ligula vitae elementum. Phasellus ut purus sed dolor euismod porta.</p>
+                    </div>
+
+                    <hr class="featurette-divider">
+
+                    <a class="anchor" id="paragraphe5"></a>
+                    <div class="paragraphe">
+                        <h2>
+                            <b>Title 5</b>
+                        </h2>
+                        <p class="textContent">Fusce venenatis congue quam, id tincidunt augue blandit id. Praesent pretium odio eget facilisis commodo. Nullam consequat mauris eget ligula laoreet dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                            fames ac turpis egestas. Donec vehicula malesuada massa, id sollicitudin felis tempor in. Nam viverra aliquet sagittis. Curabitur quis volutpat turpis, ac vulputate mauris. Duis tempus erat erat, vitae rhoncus nulla rutrum
+                            at. Sed dignissim quam nisl, a mollis ipsum venenatis non. Suspendisse congue tellus sapien. Integer convallis mattis odio sed rhoncus. Nunc et tellus vel risus ultricies iaculis. Integer id lorem dignissim tellus lobortis
+                            cursus id vitae tellus. Vestibulum porttitor ante ut ligula dictum imperdiet. Vestibulum vehicula libero sit amet lacinia condimentum. Sed lobortis lorem in mauris rhoncus porttitor. Class aptent taciti sociosqu ad litora torquent
+                            per conubia nostra, per inceptos himenaeos. Morbi mollis fringilla est id efficitur. Vivamus blandit ligula vitae eros congue mattis. Nunc euismod neque sed ante varius, et convallis diam condimentum. Suspendisse rutrum convallis
+                            dolor, eget convallis magna malesuada imperdiet. Vestibulum ultricies arcu dolor, non facilisis velit posuere nec. Etiam tincidunt, neque sit amet euismod lobortis, ligula nunc imperdiet neque, a suscipit nisi magna id mi.
+                            Praesent sit amet tellus imperdiet, interdum lectus in, tempus quam. Etiam cursus, dui sit amet ullamcorper porttitor, tellus sapien porta urna, in tempus eros ipsum non sem. Fusce quis ornare ligula. Mauris consectetur dui
+                            urna, vel aliquet justo suscipit tempus. Nunc interdum gravida metus. Nullam sit amet faucibus orci, a convallis mauris. Sed tincidunt efficitur ipsum vitae eleifend. Curabitur a urna vulputate, pretium massa euismod, lobortis
+                            tortor. Suspendisse quis leo sagittis, tincidunt mi et, ullamcorper libero. Maecenas non diam felis. In sagittis massa non bibendum laoreet. Maecenas metus justo, interdum lacinia euismod vitae, cursus at dolor. Morbi mollis
+                            congue neque, at ullamcorper metus pellentesque ut. Nunc metus diam, ornare non enim vitae, tincidunt pulvinar nisl. Vestibulum at quam mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                            himenaeos. Vestibulum felis tellus, tincidunt vulputate nisl vitae, lobortis pretium diam. Quisque volutpat lacus vel arcu consequat lobortis. Duis blandit urna ac ligula lobortis posuere. Sed accumsan quis sem mollis posuere.
+                            Integer metus purus, rhoncus eget ex ut, vestibulum mollis neque. Pellentesque mi dui, maximus non lorem ut, congue iaculis purus. Curabitur ut sodales tortor, non placerat odio.
+                        </p>
+                    </div>
+                    <hr class="featurette-divider">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-white" style="background-color: #8a1538;">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <h2 class="ml14">
+                <span class="text-wrapper">
+                    <span class="letters">Join us !</span>
+                <span class="line"></span>
+                </span>
+            </h2>
+            <br>
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-primary btn-floating m-1 shadow glow-on-hover" target="_blank" rel="noopener" style="background-color: #3b5998; width:40; height:40; border-radius:50%; border: none" href="https://www.facebook.com/uparis.igem" role="button"><i class="fab fa-facebook-f" style="margin-top: 0.3rem"></i
+        ></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-primary btn-floating m-1 shadow glow-on-hover" target="_blank" rel="noopener" style="background-color: #55acee; width:40; height:40; border-radius:50%; border: none" href="https://twitter.com/IGEM_UParis" role="button "><i class="fab fa-twitter " style="margin-top: 0.3rem"></i
+        ></a>
+
+                <!-- Google -->
+                <a class="btn btn-primary btn-floating m-1 shadow glow-on-hover" target="_blank" rel="noopener" style="background-color: #dd4b39; width:40; height:40; border-radius:50%; border: none" href="https://biomedicale.u-paris.fr/igem-page/" role="button "><i class="fas fa-globe-europe " style="margin-top: 0.3rem"></i
+        ></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-primary btn-floating m-1 shadow glow-on-hover" target="_blank" rel="noopener" style="background-color: #ac2bac; width:40; height:40; border-radius:50%; border: none" href="https://www.instagram.com/igem_uparis/" role="button "><i class="fab fa-instagram " style="margin-top: 0.3rem"></i
+        ></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-primary btn-floating m-1 shadow glow-on-hover" target="_blank" rel="noopener" style="background-color: #0082ca; width:40; height:40; border-radius:50%; border: none" href="https://www.linkedin.com/company/igem-uparis/" role="button "><i class="fab fa-linkedin-in " style="margin-top: 0.3rem"></i
+        ></a>
+                <!-- Github -->
+                <a class="btn btn-primary btn-floating m-1 shadow glow-on-hover" target="_blank" rel="noopener" style="background-color: #333333; width:40; height:40; border-radius:50%; border: none" href="https://github.com/KevinD-UP/BME_wiki" role="button "><i class="fab fa-github " style="margin-top: 0.3rem"></i
+        ></a>
+            </section>
+            <!-- Section: Social media -->
+            <i class="fas fa-envelope shadow" style="margin-top: 0.3rem"></i> : igem.uparis@gmail.com
+        </div>
+        <!-- Grid container -->
+        <hr>
+
+        <h2>
+            A Special Thanks To
+        </h2>
+
+        <p>PUT HERE LOGO OF EVERY PARTNER</p>
+
+        <!-- Copyright -->
+        <div class="text-center p-2" style="background-color: #4e1526; font-size: 12">
+            ©2021 Copyright: iGEM UParis, author: Kévin DANG <br> Source code released under MIT License <br> Made using Bootstrap, jQuery, Animejs and FontAwesome
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+    <script>
+        function sticktothetop() {
+            var window_top = $(window).scrollTop();
+            var top = $('#stick-here').offset().top;
+            if (window_top > top - 75) {
+                $('#stickThis').addClass('stick');
+                $('#stick-here').height($('#stickThis').outerHeight());
+            } else {
+                $('#stickThis').removeClass('stick');
+                $('#stick-here').height(0);
+            }
+        }
+        $(function() {
+            $(window).scroll(sticktothetop);
+            sticktothetop();
+        });
+    </script>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>
