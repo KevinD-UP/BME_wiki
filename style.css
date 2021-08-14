@@ -605,15 +605,16 @@ body {
     text-align: justify;
     text-justify: inter-word;
     font-size: normal;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
+    width: 100%
 }
 
 .articleContent .textContent {
     text-indent: 3rem;
-    font-size: 20px;
 }
 
 .sidebar-container {
+    z-index: 80;
     position: absolute;
     width: 19rem;
     height: 100%;
@@ -645,10 +646,6 @@ body {
 
 .sidebar-navigation li {
     margin: 2rem 2rem 2rem 2rem;
-}
-
-.content-container {
-    padding-left: 7rem;
 }
 
 .scanfcode {
@@ -700,6 +697,13 @@ a.anchor {
     position: relative;
     top: -250px;
     visibility: hidden;
+}
+
+.reference {
+    border: thick double #8a1538;
+    margin-top: -3rem;
+    box-shadow: 10px 10px 5px grey;
+    padding-top: 1rem;
 }
 
 
