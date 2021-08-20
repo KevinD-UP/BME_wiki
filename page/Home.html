@@ -12,6 +12,89 @@
 </head>
 
 <body>
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-floating btn-lg hover-shadow ripple" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <header class="sticky-top">
+        <nav class="navbar navbar-default navbar-expand-lg navbar-dark shadow rounded" id="navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <a class="navbar-brand" href="#" style="height: 2%; width: 2%">
+                    <img src="../image/LogoIGEMUparis.png" alt="logo igem" style="width: 100%; height: 100%">
+                </a>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="https://2021.igem.org/Team:UParis_BME">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Project
+                </a>
+                            <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Background</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Description">Description</a></li>
+                                <li><a class="dropdown-item" href="#">Parts overview</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Proof_Of_Concept">Proof of concept</a></li>
+                                <li><a class="dropdown-item" href="#">Communication</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Lab
+                </a>
+                            <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Dry lab</a></li>
+                                <li><a class="dropdown-item" href="#">Wet lab</a></li>
+                                <li><a class="dropdown-item" href="#">Safety</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://2021.igem.org/Team:UParis_BME/Human_Practices">Human pratices</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                            <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Team">Team</a></li>
+                                <li><a class="dropdown-item" href="#">Partnerships</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Collaborations">Collaborations</a></li>
+                                <li><a class="dropdown-item" href="#">Sponsors</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Awards
+                </a>
+                            <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Education">Education</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Entrepreneurship">Entrepreneurship</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Hardware">Hardware</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Inclusivity">Inclusivity</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Measurement">Measurement</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Model">Model</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Plant">Plant</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Software">Software</a></li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:UParis_BME/Substainable">Substainable</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <input type="checkbox" id="checkbox" class="checkbox" />
+                <label for="checkbox" class="toggle-theme ">
+                    <i class="fas fa-moon"></i> 
+                    <i class="fas fa-sun"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
     <main>
         <!-- Carousel overlay -->
         <div class="overlay">
@@ -94,7 +177,7 @@
                 </div>
                 <!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img src="../image/team.gif" alt="team logo" width="200" height="150">
+                    <img src="../image/team.gif" alt="team logo" width="200" height="150" style="border-radius: 50%;">
                     <hr>
                     <h2>University of Paris <br> BME team </h2>
                     <p>Don't doubt about the fact that we are the best team :D</p>
@@ -158,7 +241,144 @@
             <!-- /.container -->
         </div>
     </main>
-    <script src="../script/script.js"></script>
+    <footer class="text-center text-white" style="background-color: #8a1538;">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <h2 class="ml14">
+                <span class="text-wrapper">
+                    <span class="letters">Join us !</span>
+                <span class="line"></span>
+                </span>
+            </h2>
+            <br>
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-primary btn-floating m-1 shadow glow-on-hover rounded-circle" target="_blank" rel="noopener" style="background-color: #3b5998; width:40; height:40; border: none" href="https://www.facebook.com/uparis.igem" role="button"><i class="fab fa-facebook-f" style="margin-top: 0.3rem"></i
+        ></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-primary btn-floating m-1 shadow glow-on-hover rounded-circle" target="_blank" rel="noopener" style="background-color: #55acee; width:40; height:40; border: none" href="https://twitter.com/IGEM_UParis" role="button "><i class="fab fa-twitter " style="margin-top: 0.3rem"></i
+        ></a>
+
+                <!-- Google -->
+                <a class="btn btn-primary btn-floating m-1 shadow glow-on-hover rounded-circle" target="_blank" rel="noopener" style="background-color: #dd4b39; width:40; height:40; border: none" href="https://biomedicale.u-paris.fr/igem-page/" role="button "><i class="fas fa-globe-europe " style="margin-top: 0.3rem"></i
+        ></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-primary btn-floating m-1 shadow glow-on-hover rounded-circle" target="_blank" rel="noopener" style="background-color: #ac2bac; width:40; height:40; border: none" href="https://www.instagram.com/igem_uparis/" role="button "><i class="fab fa-instagram " style="margin-top: 0.3rem"></i
+        ></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-primary btn-floating m-1 shadow glow-on-hover rounded-circle" target="_blank" rel="noopener" style="background-color: #0082ca; width:40; height:40; border: none" href="https://www.linkedin.com/company/igem-uparis/" role="button "><i class="fab fa-linkedin-in " style="margin-top: 0.3rem"></i
+        ></a>
+                <!-- Github -->
+                <a class="btn btn-primary btn-floating m-1 shadow glow-on-hover rounded-circle" target="_blank" rel="noopener" style="background-color: #333333; width:40; height:40; border: none" href="https://github.com/KevinD-UP/BME_wiki" role="button "><i class="fab fa-github " style="margin-top: 0.3rem"></i
+        ></a>
+            </section>
+            <!-- Section: Social media -->
+            <i class="fas fa-envelope shadow" style="margin-top: 0.3rem"></i> : igem.uparis@gmail.com
+        </div>
+        <!-- Grid container -->
+        <hr>
+
+        <h2>
+            A Special Thanks To
+        </h2>
+
+        PUT HERE LOGO OF EVERY PARTNER
+
+        <!-- Copyright -->
+        <div class="text-center p-2" style="background-color: #4e1526; font-size: 12">
+            ©2021 Copyright: iGEM UParis, author: Kévin DANG <br> Source code released under MIT License <br> Made using Bootstrap, jQuery, Animejs and FontAwesome
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <script>
+        //Dark Mode
+        document.querySelector("#checkbox").addEventListener("change", () => {
+            document.querySelector("body").classList.toggle("dark")
+        });
+
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.background = "#8a1538";
+                mybutton.style.display = "block";
+            } else {
+
+                document.getElementById("navbar").style.background = "none";
+                mybutton.style.display = "none"
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        var textWrapper = document.querySelector('.ml6');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({
+                loop: true
+            })
+            .add({
+                targets: '.ml6 .letter',
+                scale: [4, 1],
+                opacity: [0, 1],
+                translateZ: 0,
+                easing: "easeOutExpo",
+                duration: 950,
+                delay: (el, i) => 70 * i
+            }).add({
+                targets: '.ml6',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml14 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({
+                loop: true
+            })
+            .add({
+                targets: '.ml14 .line',
+                scaleX: [0, 1],
+                opacity: [0.5, 1],
+                easing: "easeInOutExpo",
+                duration: 900
+            }).add({
+                targets: '.ml14 .letter',
+                opacity: [0, 1],
+                translateX: [40, 0],
+                translateZ: 0,
+                scaleX: [0.3, 1],
+                easing: "easeOutExpo",
+                duration: 800,
+                offset: '-=600',
+                delay: (el, i) => 150 + 25 * i
+            }).add({
+                targets: '.ml14',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 2500
+            });
+    </script>
 </body>
 
 </html>

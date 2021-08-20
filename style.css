@@ -7,9 +7,10 @@
 /* Padding below the footer and lighter body text */
 
 body {
-    color: #8a1538;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
+    transition: background 0.5s ease, color 0.5s ease;
+    color: #8a1538;
 }
 
 
@@ -97,7 +98,7 @@ body {
 
 .featurette-divider {
     margin: 5rem 0;
-    background-color: #8a1538;
+    border: 1px solid #8a1538;
     /* Space out the Bootstrap <hr> more */
 }
 
@@ -239,7 +240,7 @@ body {
     font-weight: 800;
     transition: 1s;
     position: absolute;
-    margin: 10px;
+    margin: 5px;
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
@@ -708,3 +709,55 @@ a.anchor {
 
 
 /*--- Content management end ---*/
+
+
+/*--- Dark mode management begin ---*/
+
+.toggle-theme {
+    background: #4e1526;
+    height: 3rem;
+    width: 3rem;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    font-size: 2rem;
+}
+
+.toggle-theme:hover,
+.toggle-theme:focus {
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+.fa-sun {
+    position: absolute;
+    color: rgb(255, 72, 0);
+    opacity: 0;
+}
+
+.fa-moon {
+    position: absolute;
+    color: rgb(251, 178, 6);
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked~.toggle-theme .fa-sun {
+    opacity: 1;
+}
+
+.checkbox:checked~.toggle-theme .fa-moon {
+    opacity: 0;
+}
+
+.dark {
+    background-color: #152028;
+    color: #fff;
+}
