@@ -1,6 +1,7 @@
 //Dark Mode
 document.querySelector("#checkbox").addEventListener("change", () => {
     document.querySelector("body").classList.toggle("dark")
+    document.querySelector("#main").classList.toggle("dark")
 });
 
 //Get the button
