@@ -378,7 +378,7 @@ body {
 /*--- Typing smooth begin ---*/
 
 .typingSmooth {
-    border-right: solid 3px #fff;
+    /*border-right: solid 3px #fff;*/
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
@@ -590,16 +590,16 @@ body {
 
 /*--- Content management ---*/
 
-.headliner {
+#main .headliner {
     margin-bottom: 4rem;
 }
 
-.pageIllustration {
+#main .pageIllustration {
     height: 57.6rem;
     width: 100%;
 }
 
-.pageTitle {
+#main .pageTitle {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -608,7 +608,7 @@ body {
     text-shadow: 2px 2px 5px black;
 }
 
-.articleContent {
+#main .articleContent {
     text-align: justify;
     text-justify: inter-word;
     font-size: normal;
@@ -616,11 +616,11 @@ body {
     width: 100%
 }
 
-.articleContent .textContent {
+#main .articleContent .textContent {
     text-indent: 3rem;
 }
 
-.sidebar-container {
+#main .sidebar-container {
     z-index: 80;
     position: absolute;
     width: 19rem;
@@ -632,36 +632,36 @@ body {
     font-size: 1.2rem;
 }
 
-.sidebar-logo {
+#main .sidebar-logo {
     margin-left: 2rem;
     font-size: 1.5rem;
 }
 
-.sidebar-logo a {
+#main .sidebar-logo a {
     text-decoration: none;
 }
 
-.sidebar-navigation {
+#main .sidebar-navigation {
     list-style-type: none;
 }
 
-.sidebar-navigation a {
+#main .sidebar-navigation a {
     color: #8a1538;
     text-decoration: none;
     font-size: large;
 }
 
-.sidebar-navigation li {
+#main .sidebar-navigation li {
     margin: 2rem 2rem 2rem 2rem;
 }
 
-.scanfcode {
+#main .scanfcode {
     padding: 10px;
     position: relative;
 }
 
-.scanfcode:before,
-.scanfcode:after {
+#main .scanfcode:before,
+#main .scanfcode:after {
     border-color: #8a1538;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
@@ -673,40 +673,40 @@ body {
     width: 24px;
 }
 
-.scanfcode:before {
+#main .scanfcode:before {
     border-left-width: 2px;
     border-top-width: 2px;
     left: -5px;
     top: -5px;
 }
 
-.scanfcode:after {
+#main .scanfcode:after {
     border-bottom-width: 2px;
     border-right-width: 2px;
     bottom: -5px;
     right: -5px;
 }
 
-.scanfcode:hover:before,
-.scanfcode:hover:after {
+#main .scanfcode:hover:before,
+#main .scanfcode:hover:after {
     height: 100%;
     width: 100%;
 }
 
-#stickThis.stick {
+#main #stickThis.stick {
     margin-top: 0;
     position: fixed;
     top: 8rem;
 }
 
-a.anchor {
+#main a.anchor {
     display: block;
     position: relative;
     top: -250px;
     visibility: hidden;
 }
 
-.reference {
+#main .reference {
     border: thick double #8a1538;
     margin-top: -3rem;
     box-shadow: 10px 10px 5px grey;

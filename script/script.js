@@ -29,6 +29,7 @@ function backToTop() {
     document.documentElement.scrollTop = 0;
 }
 
+/*
 var textWrapper = document.querySelector('.ml6');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -50,8 +51,8 @@ anime.timeline({
         easing: "easeOutExpo",
         delay: 1000
     });
-
-// Wrap every letter in a span
+*/
+/* Wrap every letter in a span
 var textWrapper = document.querySelector('.ml14 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -81,3 +82,4 @@ anime.timeline({
         easing: "easeOutExpo",
         delay: 2500
     });
+    */
